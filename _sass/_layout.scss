@@ -25,7 +25,8 @@ div.home {
 }
 
 img.logo {
-  width: 15vmin;
+  height: 20vmin;
+  flex: 0 0 auto;
   margin: auto auto 2vmin auto;
   user-select: none;
   -webkit-user-select: none;
@@ -56,7 +57,7 @@ ul {
     box-sizing: border-box;
 
     i {
-      font-size: 3vmin !important;
+      font-size: 4vmin !important;
       margin-bottom: 1vmin;
     }
 
