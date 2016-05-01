@@ -35,8 +35,9 @@ div.home {
   }
   p {
     margin: 1vmin auto 0 5vmin;
-    color: #666;
-    font-weight: 200;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 2vmin;
     max-width: 40vmin;
@@ -66,14 +67,17 @@ ul {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 1.25vmin;
     transition: 100ms ease-out;
     padding: 5px;
     box-sizing: border-box;
 
     i {
-      font-size: 3vmin !important;
+      font-size: 3vmin;
       margin-bottom: 1vmin;
+
+      @include media-query ($on-palm) {
+        font-size: 5vmin;
+      }
     }
 
     &:hover {
