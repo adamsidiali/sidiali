@@ -58,26 +58,28 @@ ul {
 
   li {
     flex: 1;
-    margin: auto 0;
-    color: #666;
-    font-size: 20px;
+    margin: auto 3vmin auto 0;
+    color: #555;
+    font-size: 2vmin;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    font-weight: 300;
     transition: 100ms ease-out;
-    padding: 5px;
     box-sizing: border-box;
 
-    i {
-      font-size: 3vmin;
-      margin-bottom: 1vmin;
+    @include media-query ($on-palm) {
+      font-size: 3vmin !important;
+    }
 
+    i {
+      font-size: 3vmin !important;
       @include media-query ($on-palm) {
-        font-size: 5vmin;
+        font-size: 5vmin !important;
       }
+
     }
 
     &:hover {
