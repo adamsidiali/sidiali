@@ -22,6 +22,10 @@ div.home {
     line-height: 1;
     letter-spacing: 2vmin;
     padding: 0;
+
+    @include media-query ($on-palm) {
+      font-size: 15vmin;
+    }
   }
   h3 {
     margin: 0 auto 0 5vmin;
@@ -32,6 +36,10 @@ div.home {
     line-height: 1;
     letter-spacing: 2vmin;
     padding: 0;
+
+    @include media-query ($on-palm) {
+      font-size: 15vmin;
+    }
   }
   p {
     margin: 1vmin auto 0 5vmin;
@@ -43,8 +51,8 @@ div.home {
     max-width: 40vmin;
 
     @include media-query ($on-palm) {
-      font-size: 3.5vmin;
-      max-width: 45vmin;
+      font-size: 4vmin;
+      max-width: 65vmin;
     }
   }
 }
@@ -58,7 +66,7 @@ ul {
 
   li {
     flex: 1;
-    margin: auto 3vmin auto 0;
+    margin: auto 5vmin auto 0;
     color: #555;
     font-size: 2vmin;
     display: flex;
