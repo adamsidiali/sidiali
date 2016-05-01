@@ -4,7 +4,7 @@ div.home {
   overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   box-sizing: border-box;
   user-select: none;
   -webkit-user-select: none;
@@ -14,7 +14,7 @@ div.home {
   background-size: cover;
 
   h1 {
-    margin: 5vmin auto 0 5vmin;
+    margin: auto auto 0 auto;
     text-transform: uppercase;
     font-weight: 700;
     color: #aaa;
@@ -23,7 +23,7 @@ div.home {
     padding: 0;
   }
   h3 {
-    margin: 0 auto 0 5vmin;
+    margin: 0 auto 0 auto;
     text-transform: uppercase;
     font-weight: 300;
     color: #888;
@@ -33,25 +33,11 @@ div.home {
   }
 }
 
-img.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 25vmin;
-  flex: 0 0 auto;
-  margin: auto auto 2vmin auto;
-  user-select: none;
-  -webkit-user-select: none;
-  padding: 2vmin;
-  box-sizing: border-box;
-}
-
 ul {
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  margin: auto 5vmin 5vmin auto;
+  margin: auto auto 5vmin auto;
 
   li {
     flex: 1;
